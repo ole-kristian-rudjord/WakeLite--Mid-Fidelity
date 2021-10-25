@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding-top: 7vh;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/*---LIST OF SECTIONS---
+Navbar
+Button Skip
+WakeLite
+Who Are We
+Our Mission
+About Us
+Contact
+Footer
+----------------------*/
+
+
+/*----------------------
+    Start of Navbar
+----------------------*/
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 7vh;
+  width: 100%;
+  border-bottom: orange solid 2px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.Logo {
+  margin-left: 10%;
+  white-space: nowrap;
+}
+.Logo img {
+  width: 6vh;
+  border-radius: 50%;
+  transition: 1s;
+}
+.Logo img:hover {
+  box-shadow: 0 0 15px 10px yellow;
+}
+.Logo a {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: black;
+  padding-right: 18px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.6s ease-in-out, color 0.3s ease-in-out; 
+}
+.Logo a:hover {
+  color: white;
+  background-color: orange;
+}
+.Logo a:active, a:visited {
+  color: inherit;
+}
+#Navbar-ul {
+  margin-right: 10%;
+}
+.Navbar li {
+  list-style: none;
+  display: inline-block;
+}
+.Navbar li a {
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  padding: 8px 10px;
+  border-radius: 20px;
+  transition: background-color 0.6s, color 0.3s;
+}
+.Navbar li a:hover {
+  color: white;
+  background-color: orange;
+}
+.Navbar li a:active, a:visited {
+  color: inherit;
+}
+
+#Navbar-Drop-Down {
+  display: none;
+}
+/*----------------------
+    End of Navbar
+----------------------*/
+
+/*----------------------
+    Start of Button Skip
+----------------------*/
+.Button-Skip-Up {
+  position: fixed;
+  margin: 12px 8px;
+  border-radius: 16px;
+  background-color: orange;
+  bottom: 0;
+  right: 0;
+  border: rgb(255, 150, 0) solid 2px;
+}
+.Button-Skip-Up img {
+  padding: 8px;
+  width: 24px;
+  transform: rotate(-90deg);
+  filter: invert(100%);
+  transition: 0.2s;
+}
+.Button-Skip-Up img:hover {
+  width: 30px;
+}
+/*----------------------
+    End of Button Skip
+----------------------*/
+
+/*----------------------
+    Start of WakeLite
+----------------------*/
+.Start-Div {
+  height: 100vh;
+  /* background: url(img/MainImage.png) fixed no-repeat; */
+}
+.Start-Div img {
+  object-fit: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+.Start-Div h1 {
+  font-size: 2.8rem;
+  line-height: 3rem;
+  position: fixed;
+  color: white;
+  font-weight: 800;
+  text-shadow: 1px 1px orange, 2px 2px orange, 3px 3px orange, 4px 4px orange;
+  margin-top: 10%;
+  margin-left: 64%;
+  /* transition: 1s; */
+  z-index: -9;
+}
+/* Code below does not work since it is positioned on z-index -1 */
+/* .Start-Div h1:hover {
+  text-shadow: 1px -1px orange, 2px -1px orange, 3px -2px orange, 4px -2px orange, 5px -3px orange, 6px -3px orange, 7px -4px orange, 18px -8px rgba(0, 0, 0, 0.3);
+} */
+/*----------------------
+    End of WakeLite
+----------------------*/
+
+#Divider1 {
+  width: 100%;
+  height: 6vh;
+  background: linear-gradient(5deg, orange 20%, yellow 100%);
+}
+
+/*----------------------
+    Start of Who Are We
+----------------------*/
+.WhoAreWe-Full {
+  background-color: white;
+  height: 100%;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.WhoAreWe-Div {
+  display: grid;
+  grid-template-columns: 30% 30%;
+  gap: 40px 40px;
+  justify-content: center;
+}
+.WhoAreWe-Section {
+  margin: auto;
+}
+.WhoAreWe-Div img {
+  width: 100%;
+  max-width: 350px;
+}
+#WhoAreWe-p-Start {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+#WhoAreWe-p1 {
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+#WhoAreWe-p2 {
+  font-size: 0.9rem;
+  line-height: 2rem;
+}
+#WhoAreWe-p3 {
+  font-size: 0.8rem;
+  line-height: 2rem;
+}
+/*----------------------
+    End of Who Are We
+----------------------*/
+
+#Divider2 {
+  width: 100%;
+  height: 6vh;
+  background: linear-gradient(5deg, orange 20%, yellow 100%);
+}
+
+/*----------------------
+    Start of Our Mission
+----------------------*/
+.OurMission-Full {
+  background-color: white;
+  height: 100%;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.OurMission-Div {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 0px 30px;
+  justify-content: center;
+  margin: 0 50px;
+}
+.OurMission-Sections {
+  margin: auto;
+}
+.OurMission-IMG-Div {
+  display: flex;
+  flex-direction: column;
+}
+.OurMission-Div img {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px 0;
+}
+.OurMission-Div h1 {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-bottom: 4vh;
+}
+.OurMission-Div h2 {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  margin-bottom: 2vh;
+}
+.OurMission-Div ul {
+  list-style: none;
+}
+.OurMission-Div li {
+  line-height: 2rem;
+  margin-bottom: 2vh;
+}
+.OurMission-Div li::before {
+  margin-left: -8px;
+  margin-right: 2px;
+  content: "|";
+  color: orange;
+}
+/*----------------------
+    End of Our Mission
+----------------------*/
+
+#Divider3 {
+  width: 100%;
+  height: 6vh;
+  background: linear-gradient(5deg, orange 20%, yellow 100%);
+}
+
+/*----------------------
+    Start of About Us
+----------------------*/
+.TheCrew-Div {
+  height: 100%;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: white;
+  padding-bottom: 50px;
+}
+.TheCrew-Div h1 {
+  padding-top: 5%;
+  text-align: center;
+}
+.cardstacktop {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.cardstackbot {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  margin-top: 60px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* safari */
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+.flip-card-back {
+  border: orange solid 2px;
+  border-radius: 10px;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-card-back h1 {
+  color: black;
+  font-size: 1.7rem;
+}
+.flip-card-back p {
+  display: none;
+  font-size: 1.2rem;
+  color: black;
+}
+.social {
+  margin-top: 35px;
+  font-size: 42px;
+}
+.social a {
+  padding: 0 8px;
+  transition: 0.3s linear;
+  border-radius: 10px;
+  border: transparent solid 2px;
+}
+.social a:hover {
+  border: orange solid 2px;
+}
+/*----------------------
+    End of About Us
+----------------------*/
+
+#Divider4 {
+  width: 100%;
+  height: 6vh;
+  /* margin-top: 18vh; */
+  background: linear-gradient(5deg, orange 20%, yellow 100%);
+}
+
+/*----------------------
+    Start of Contact
+----------------------*/
+.Contact-Full {
+  background-color: white;
+  height: 100%;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Contact-Header1 {
+  text-align: center;
+  margin: 0 30px;
+  margin-top: 8vh;
+  margin-bottom: 1vh;
+  font-size: 1.5rem;
+}
+.Contact-Header1 span {
+  display: inline-block;
+}
+.Contact-Header2 {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 0 50px;
+}
+.Contact-Header2 span {
+  display: inline-block;
+  white-space: nowrap;
+}
+.Contact-Header3 {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 0 120px;
+}
+.Contact-Header3 span {
+  display: inline-block;
+  white-space: nowrap;
+}
+.Contact-Header3 a {
+  color: black;
+  text-decoration: none;
+}
+.Contact-Header3 #phone-span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.Contact-Form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  height: 520px;
+  padding: 0 16px;
+  margin: auto;
+  margin: 0 50px;
+  margin-top: 4vh;
+}
+.Contact-Form input, textarea {
+  font-size: 1rem;
+  width: 100%;
+  padding: 16px;
+  background-color: white;
+  outline: none;
+  border: black solid 1px;
+  border-radius: 8px;
+  transition: 0.1s;
+}
+.Contact-Form input:not(.Contact-Submit input):focus, textarea:focus, .Contact-Submit input:hover {
+  border: orange solid 1px;
+  box-shadow: orange 0 0 0 1px;
+}
+.Contact-Submit {
+  text-align: center;
+  width: 30%;
+  min-width: 100px;
+}
+.Contact-Submit input {
+  cursor: pointer;
+}
+#Contact-Response {
+  padding: 12px 18px;
+  margin-top: 15px;
+  background-color: orange;
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+}
+#Contact-Response.Response-Active {
+  opacity: 100%;
+  visibility: visible;
+}
+#Contact-Reset {
+  display: none;
+}
+/*----------------------
+    End of Contact
+----------------------*/
+
+/*----------------------
+    Start of Footer
+----------------------*/
+.Footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  height: 8vh;
+  background-color: white;
+  border-top: orange solid 2px;
+}
+.Footer-Div {
+  display: inline-flex;
+  font-size: 1rem;
+  color: black;
+}
+.Footer-Div a {
+  color: black;
+  font-weight: 600;
+}
+.Footer-Div a:visited a:active {
+  color: inherit;
+}
+#Footer-Socials {
+  display: inline-flex;
+}
+#Footer-Socials ul {
+  list-style: none;
+  display: inline-flex;
+}
+#Footer-Socials a {
+  font-size: 1.1rem;
+  padding: 2px 5px;
+  margin: 0 2px;
+  border-radius: 8px;
+  border: transparent solid 2px;
+  transition: 0.2s;
+}
+#Footer-Socials a:hover {
+  border: orange solid 2px; 
+}
+
+@media only screen and (max-width: 1150px) {
+  .Footer {
+    flex-direction: column;
+    height: 30vh;
+  }
+}
+/*----------------------
+    End of Footer
+----------------------*/
+
+/*----------------------
+    Start of Mobile Responsiveness
+----------------------*/
+@media only screen and (max-width: 850px) {
+
+  /* Start of Navbar */
+  .Logo {
+    display: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  #Navbar-ul {
+    position: absolute;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 93vh;
+    width: 50%;
+    background-color: orange;
+    right: 0;
+    top: 7vh;
+    margin: 0;
+    transform: translateX(100%); 
+    display: none;
+    transition: 0.4s ease-in-out;
+  }
+  #Navbar-ul.Navbar-active {
+    display: flex;
+  }
+  #Navbar-ul.Navbar-active2 {
+    transform: translateX(0);
+  }
+  .Navbar li a {
+    padding: 25px;
+  }
+  #Navbar-Drop-Down {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    right: 0;
+    padding: 18px;
+    width: 28px;
+  }
+  /* End of Navbar */
+
+
+  /* Start of Wake Lite */
+  .Start-Div h1 {
+    white-space: nowrap;
+    margin-top: 120px;
+    margin-left: 55%;
+    transform: translateX(-50%);
+  }
+  /* End of Wake Lite */
+
+
+  /* Start of Who Are We */
+  .WhoAreWe-Full {
+    padding: 10vh 0;
+  }
+  .WhoAreWe-Div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px;
+  }
+  #WhoAreWe-Section3 {
+    max-width: 330px;
+  }
+  #WhoAreWe-Section4 {
+    display: none;
+  } 
+  /* End of Who Are We */
+
+
+  /* Start og Our Mission */
+  .OurMission-Full {
+    padding: 12vh 0;
+  }
+  .OurMission-Div {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  .OurMission-Div img {
+    max-width: 350px;
+  }
+  /* End of Our Mission */
+
+
+  /* Start of About Us */
+  .TheCrew-Div {
+    padding: 12vh 0;
+  }
+  /* End of About Us */
+
+
+  /* Start of Contact */
+  .Contact-Full {
+    padding: 10vh 0;
+  }
+  .Contact-Header1 {
+    margin-bottom: 2vh;
+  }
+  .Contact-Header2, .Contact-Header3 {
+    font-size: 1rem;
+  }
+  .Contact-Header3 a {
+    text-decoration: underline;
+  }
+  .Contact-Form {
+    height: 400px;
+  }
+  .Contact-Form input, textarea {
+    font-weight: 400;
+  }
+  .Contact-Form textarea {
+    height: 20vh;
+  }
+  /* End of Contact */
+
+
+  /* Start of Button Skip */
+  .Button-Skip-Up {
+    margin: 6px;
+  }
+  .Button-Skip-Up img {
+    padding: 4px;
+  }
+  .Button-Skip-Up img:hover {
+    width: 24px;
+  }
+  /* End of Button Skip */
+}
+/*----------------------
+    End of Mobile Responsiveness
+----------------------*/
